@@ -1,8 +1,8 @@
 import React from 'react'
-import FavButton from './FavButton';
 //this displays the results of the search
 const MovieInfo = (props)=>{
     const FavComp = props.favComp;
+    if(props.movies){
     return(
         <> 
             {props.movies.map((movie,index)=> (
@@ -26,6 +26,9 @@ const MovieInfo = (props)=>{
             ))}
         
         </>
-    );
+    );}
+    else{
+    return(<div></div>);
+    }
 }
 export default MovieInfo;

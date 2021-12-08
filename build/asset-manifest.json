@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/~alro7957/dev/project2/milestone3/static/css/main.04d146ba.chunk.css",
+    "main.js": "/~alro7957/dev/project2/milestone3/static/js/main.90dec62a.chunk.js",
+    "main.js.map": "/~alro7957/dev/project2/milestone3/static/js/main.90dec62a.chunk.js.map",
+    "runtime-main.js": "/~alro7957/dev/project2/milestone3/static/js/runtime-main.d22b086e.js",
+    "runtime-main.js.map": "/~alro7957/dev/project2/milestone3/static/js/runtime-main.d22b086e.js.map",
+    "static/js/2.09d838a2.chunk.js": "/~alro7957/dev/project2/milestone3/static/js/2.09d838a2.chunk.js",
+    "static/js/2.09d838a2.chunk.js.map": "/~alro7957/dev/project2/milestone3/static/js/2.09d838a2.chunk.js.map",
+    "static/js/3.88c49f89.chunk.js": "/~alro7957/dev/project2/milestone3/static/js/3.88c49f89.chunk.js",
+    "static/js/3.88c49f89.chunk.js.map": "/~alro7957/dev/project2/milestone3/static/js/3.88c49f89.chunk.js.map",
+    "index.html": "/~alro7957/dev/project2/milestone3/index.html",
+    "static/css/main.04d146ba.chunk.css.map": "/~alro7957/dev/project2/milestone3/static/css/main.04d146ba.chunk.css.map",
+    "static/js/2.09d838a2.chunk.js.LICENSE.txt": "/~alro7957/dev/project2/milestone3/static/js/2.09d838a2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d22b086e.js",
+    "static/js/2.09d838a2.chunk.js",
+    "static/css/main.04d146ba.chunk.css",
+    "static/js/main.90dec62a.chunk.js"
+  ]
+}

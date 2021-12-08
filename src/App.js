@@ -13,8 +13,9 @@ const App= () => {
   const [movies, setMovies] =useState([]);
   const[fav, setFav] =useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  
   const getMovieResult = async (searchTerm)=> {
-    const url = `http://www.omdbapi.com/?s=${searchTerm}&apikey=526cd5e0`;
+    const url = `https://www.omdbapi.com/?s=${searchTerm}&apikey=526cd5e0`;
 
     const result = await fetch(url);
     const resultJson = await result.json();
@@ -33,14 +34,22 @@ const App= () => {
     const savedFavs = JSON.parse(localStorage.getItem('movie-me-favs'));
     setFav(savedFavs)
   }, []);
+  
   const addToFavorites = (movie) => {
-    const newFav =[...fav, movie]
+  let newFav;
+    if(fav !== null){
+    newFav =[...fav, movie]
+  }
+  else{
+    newFav = Array.from(movie);
+    newFav[0] = movie;
+  }
     setFav(newFav);
     savingFavorites(newFav);
   };
 
   const removeFavorites = (movie) => {
-    const newFav = fav.filter((fav) => fav.imdbID != movie.imdbID);
+    const newFav = fav.filter((fav) => fav.imdbID !== movie.imdbID);
     setFav(newFav);
     savingFavorites(newFav);
   };
@@ -48,6 +57,7 @@ const App= () => {
   const savingFavorites = (favorites) => {
     localStorage.setItem('movie-me-favs', JSON.stringify(favorites))
   }
+  console.log(fav);
   return(
     <div className="App">
     <header>

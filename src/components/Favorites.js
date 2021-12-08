@@ -1,8 +1,8 @@
 import React from 'react'
-import FavButton from './FavButton';
 
 const Favorites = (props)=>{
     const FavComp = props.favComp;
+    if(props.movies){
     return (
         <> 
             {props.movies.map((movie, index)=> (
@@ -24,10 +24,16 @@ const Favorites = (props)=>{
                 </div>
                 
             </>
-        ))}
+        ))
+        }
     
     </>
-    );
-}
+        
+    );}
+    else{
+        return(<div></div>);
+    }
+    }
 
-export default Favorites
+
+export default Favorites;

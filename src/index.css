@@ -86,12 +86,72 @@ div {
   display: block;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
-  border: white;
+@media screen and (max-width: 500px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    border: white;
+  }
+  .moviePoster {
+    height: 185px;
+    width: 137px;
+  }
+  .flip-card {
+    background-color: transparent;
+    margin-top: 20px;
+    padding-top: 12px;
+    height: 195px;
+    width: 147px;
+    perspective: 1000px;
+  }
 }
+
+@media screen and (min-width: 501px) and (max-width: 980px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    border: white;
+  }
+  .moviePoster {
+    height: 230px;
+    width: 170px;
+  }
+  .flip-card {
+    background-color: transparent;
+    margin-top: 20px;
+    padding-top: 12px;
+    height: 250px;
+    width: 150px;
+    perspective: 1000px;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    border: white;
+  }
+  .moviePoster {
+    height: 230px;
+    width: 170px;
+  }
+  .flip-card {
+    background-color: transparent;
+    margin-top: 20px;
+    padding-top: 12px;
+    height: 250px;
+    width: 150px;
+    perspective: 1000px;
+  }
+}
+
 .results {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -106,14 +166,6 @@ h2 {
 }
 
 /* https://www.w3schools.com/howto/howto_css_flip_card.asp*/
-.flip-card {
-  background-color: transparent;
-  margin-top: 20px;
-  padding-top: 12px;
-  height: 250px;
-  width: 150px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -136,7 +188,7 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 

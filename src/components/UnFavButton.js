@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoMdCloseCircleOutline} from "react-icons/io";
-import { IoMdCloseCircle } from "react-icons/io";
+
 
 // Icons from https://react-icons.github.io/react-icons/icons?name=io
 function UnFavButton() {
@@ -13,7 +13,7 @@ function UnFavButton() {
     )
 }
 
-export default UnFavButton
+export default UnFavButton;
 
 // https://pretagteam.com/question/hover-and-focus-inline-style-in-react-doesnt-work
 
